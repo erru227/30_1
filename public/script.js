@@ -3,6 +3,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
 
+
 function makeAlert(message, props){
    alert(`${greeting}, ${props.name}`);
 }
@@ -10,10 +11,10 @@ function makeAlert(message, props){
 function Page(props) {
    return (
       <div>
-         <button onClick={makeAlert("Hello")}>
+         <button onClick={() => makeAlert("Hello", props)}>
             Hello Class
          </button>
-         <button onClick={makeAlert("Welcome")}>
+         <button onClick={() => makeAlert("Welcome", props)}>
             Welcome Class
          </button>
       </div>
