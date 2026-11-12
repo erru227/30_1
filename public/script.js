@@ -12,7 +12,7 @@ function Page(props) {
          <button onClick={makeAlert("Hello", props)}>
             Hello Class
          </button>
-         </br>
+         <br />
          <button onClick={makeAlert("Welcome", props)}>
             Welcome Class
          </button>
