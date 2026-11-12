@@ -4,16 +4,21 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
 function Greeting(props) {
-   function helloClick() {
-      alert(`Hello, ${props.name}!`);
+   function greetClick(greeting) {
+      alert(`${greeting}, ${props.name}!`);
    }
  
    return (
-      <button onClick={helloClick}>
-         Say Hello
-      </button>
+      <div>
+         <button onClick={() => greetClick("Hello")}>
+            Say Hello
+         </button>
+         <button onClick={() => greetClick("Hey")}>
+            Say Welcome
+         </button>
+      </div>
    );
- }
+}
 
 function App() {
    return (
