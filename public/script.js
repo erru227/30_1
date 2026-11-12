@@ -5,7 +5,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
 function makeAlert(message, props){
-   alert(`${greeting}, ${props.name}`);
+   alert(`${message}, ${props.name}`);
 }
 
 function Page(props) {
