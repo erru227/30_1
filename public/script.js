@@ -1,20 +1,19 @@
 const root = ReactDOM.createRoot(document.getElementById("root"));
-//TODO!!!   NOT COMPLETE YET, BUT THIS ONE DOES NOT HAVE FUNCTION ATTRIBUTES!!!
-
-
-
 
 function makeAlert(message, props){
-   alert(`${message}, ${props.name}`);
+   let output = message + ", "+props.name;
+   alert(output);
 }
 
 function Page(props) {
    return (
       <div>
-         <button onClick={() => makeAlert("Hello", props)}>
+         <h1>React Events</h1>
+         <button onClick={makeAlert("Hello", props)}>
             Hello Class
          </button>
-         <button onClick={() => makeAlert("Welcome", props)}>
+         </br>
+         <button onClick={makeAlert("Welcome", props)}>
             Welcome Class
          </button>
       </div>
